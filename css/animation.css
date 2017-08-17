@@ -1,0 +1,29 @@
+/*.services.active li:first-child {
+	transition-delay: 1s;
+}
+.services.active li:nth-child(2) {
+	transition-delay: 800ms;
+}
+.services.active li:nth-child(3) {
+	transition-delay: 600ms;
+}
+.services.active li:nth-child(4) {
+	transition-delay: 400ms;
+}
+.services.active li:nth-child(5) {
+	transition-delay: 200ms;
+}*/
+
+
+
+
+/*@-webkit-keyframes neonglow {
+  from {
+    box-shadow: 0 0 10px #00D9FF, 0 0 20px #00D9FF, 0 0 30px #00D9FF, 0 0 40px #00D9FF, 0 0 70px #00D9FF, 0 0 80px #00D9FF, 0 0 100px #00D9FF, 0 0 150px #00D9FF;
+    height: 3px;
+  }
+  to {
+    box-shadow: 0 0 5px #00D9FF, 0 0 10px #00D9FF, 0 0 15px #00D9FF, 0 0 20px #00D9FF, 0 0 35px #00D9FF, 0 0 40px #00D9FF, 0 0 50px #00D9FF, 0 0 75px #00D9FF;
+    height: 4px;;
+  }
+}*/
