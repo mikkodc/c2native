@@ -7,13 +7,6 @@
 /* v2.0.0
 /* ----------------------------------------------- */
 
-Array.prototype.contains = function ( needle ) {
-   for (i in this) {
-       if (this[i] == needle) return true;
-   }
-   return false;
-}
-
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
@@ -440,7 +433,7 @@ var pJS = function(tag_id, params){
     switch(p.shape){
 
       case 'circle':
-        pJS.canvas.ctx.arc(p.x, p.y, 30, 0, Math.PI * 2, false);
+        pJS.canvas.ctx.arc(p.x, p.y, radius, 0, Math.PI * 2, false);
       break;
 
       case 'edge':
@@ -1344,27 +1337,6 @@ var pJS = function(tag_id, params){
               setTimeout(function(){
                 pJS.tmp.repulse_clicking = false;
               }, pJS.interactivity.modes.repulse.duration*1000)
-            break;
-
-            case 'custom':
-
-              function intToFloat(num, decPlaces) { return num.toFixed(decPlaces); }
-
-              var posMouseX = pJS.interactivity.mouse.click_pos_x,
-                  posMouseX50 = pJS.interactivity.mouse.click_pos_x - 25,
-                  posMouseY = pJS.interactivity.mouse.click_pos_y,
-                  posMouseY50 = pJS.interactivity.mouse.click_pos_y - 25,
-                  posParticles = pJS.particles.array.map(function(x) {return x.x;});
-
-              console.log(pJS.particles);
-              console.log(intToFloat(posMouseX50 + 50, 13));
-              console.log(posMouseY);
-              console.log(posParticles.contains(posMouseX));
-              // console.log(JSON.stringify(pJS.particles.array.map(function(x) {return x.x;})));
-
-              if(posParticles.contains(posMouseX) >= intToFloat(posMouseX50 + 50, 13)) alert('Yes!');
-
-              "#65a5c8"
             break;
 
           }

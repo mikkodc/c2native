@@ -12,19 +12,64 @@
     right: 0;
     transform: translateY(-50%);
   }
-  #mainLogo {
+  #mainHeader {
+    padding-top: 30px;
+  }
+  #mainHeader #mainLogo {
+    width: auto;
+    height: auto;
+    z-index: 1;
+    padding: 20px;
+    overflow: visible;
+    margin: 0;
+    margin-top: 10px;
+    float: none;
     position: absolute;
     left: 50%;
-    top: 30px;
     transform: translateX(-50%);
-    z-index: 1;
-    padding: 0 20px 35px;
   }
-  #mainLogo img {
+  #mainHeader #mainLogo img {
     max-width: 120px;
+    display: block;
+    margin: 0 auto;
+  }
+  #mainHeader #menu-toggle {
+    display: none;
+  }
+  #mainHeader #mainNav {
+    display: block;
+    opacity: 1;
+    position: static;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+  }
+  #mainHeader #mainNav ul {
+    width: 100%;
+    display: inline-block;
+    margin-left: 50px;
+  }
+  #mainHeader #mainNav ul li {
+    display: inline-block;
+    opacity: 1;
+    margin: 0;
+  }
+  #mainHeader #mainNav ul li:not(:last-child) {
+    margin-right: 10px;
+  }
+  #mainHeader #mainNav ul li:nth-child(2) {
+    margin-right: 180px;
+  }
+
+  #mainNav .center-content {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+    transform: translateY(0);
+    padding: 0;
   }
   #mainNav ul {
-    margin-left: calc(170px / 2);
     margin-top: 60px;
   }
   #mainNav ul li:not(:last-child) {
@@ -40,6 +85,11 @@
   /*#mainNav ul li a:hover {
     transform:
   }*/
+  /*#mainNav ul li a:before {
+    content: attr(data-hover);
+    position: absolute;
+    z-index: 10;
+  }
   #mainNav ul li a:after {
     content: '';
     position: absolute;
@@ -62,16 +112,9 @@
     width: 100%;
     opacity: 1;
     transition: all 0.3s ease;
-  }
+  }*/
   #mobileHeader {
     display: none;
-  }
-  .sectionHeader {
-    background-color: #0d1517;
-    height: auto;
-  }
-  .sectionHeader .sectionTitle {
-    bottom: -60px;
   }
   .services ul {
     padding: 20px 50px;
@@ -125,17 +168,14 @@
   }
 }
 @media screen and (min-width: 991px) {
-  #mainLogo img {
-    max-width: none;
+  #mainHeader #mainNav ul {
+    margin-left: 60px;
   }
-  #mainNav ul {
-    margin-left: calc(244px / 2);
+  #mainHeader #mainNav ul li:not(:last-child) {
+    margin-right: 40px;
   }
-  #mainNav ul li:not(:last-child) {
-    margin-right: 30px;
-  }
-  #mainNav ul li:nth-child(2) {
-    margin-right: 330px;
+  #mainHeader #mainNav ul li:nth-child(2) {
+    margin-right: 220px;
   }
 }
 /*@media screen and (min-height: 899px) {

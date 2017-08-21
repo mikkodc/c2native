@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <header id="mobileHeader">
+    <header id="mainHeader" class="clearfix">
         <div class="container">
             <a href="#home" id="mainLogo">
                 <img src="img/c2native_logo.png" alt="">
@@ -46,72 +46,64 @@
                 <span></span>
               </div>
             </div>
-        </div>
 
-        <!-- Navigation -->
-        <nav id="mainNav" class="fs-menu hidden" role="navigation">
-            <div class="container center-content">
-                <ul class="clearfix">
-                    <li><a href="#home" data-hover="Home">Home</a></li>
-                    <li><a href="#pillars" data-hover="Pillars">Pillars</a></li>
-                    <li><a href="#services" data-hover="Services">Services</a></li>
-                    <li><a href="#enablers" data-hover="Enablers">Enablers</a></li>
-                    <li><a href="#team" data-hover="Team">Team</a></li>
-                </ul>
-            </div>
-        </nav>
+            <!-- Navigation -->
+            <nav id="mainNav" role="navigation">
+                <div class="center-content">
+                    <ul class="clearfix">
+                        <li><a href="#home" data-hover="Home">Home</a></li>
+                        <li><a href="#pillars" data-hover="Pillars">Pillars</a></li>
+                        <li><a href="#services" data-hover="Services">Services</a></li>
+                        <li><a href="#enablers" data-hover="Enablers">Enablers</a></li>
+                        <li><a href="#team" data-hover="Team">Team</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- Page Content -->
     <div id="fullpage">
         <div class="home section">
-            <div id="particles-js">
-                <header class="sectionHeader clearfix">
-                    <!-- Navigation -->
-                    <nav id="mainNav" role="navigation">
-                        <div class="container">
-                            <a href="#" id="mainLogo">
-                                <img src="img/c2native_logo.png" alt="">
-                            </a>
-                            <ul class="clearfix">
-                                <li><a href="#home" data-hover="Home">Home</a></li>
-                                <li><a href="#pillars" data-hover="Pillars">Pillars</a></li>
-                                <li><a href="#services" data-hover="Services">Services</a></li>
-                                <li><a href="#enablers" data-hover="Enablers">Enablers</a></li>
-                                <li><a href="#team" data-hover="Team">Team</a></li>
-                            </ul>
-                        </div>
-                    </nav>
-                </header>
-            </div>
+            <!-- <div id="particles-js"></div> -->
+            <canvas id="canvas-particles" class="canvas-particles"></canvas>
         </div>
 
         <div class="pillars section fp-auto-height-responsive">
             <header class="sectionHeader clearfix">
                 <div class="container">
                     <h2 class="sectionTitle">
-                        Our<br>Pillars
+                        Our Pillars
                     </h2>
                 </div>
             </header>
             <div class="center-content">
-                <div id="va-accordion" class="va-container">
-                    <div class="va-wrapper">
+                <div id="va-accordion" class="va-container cont">
+                    <div class="va-wrapper container">
                         <div class="va-slice">
                             <h3 class="va-title">Deep Regional Market Knowledge</h3>
                             <div class="va-content">
+                                <div class="img-block">
+                                    <img src="img/market-knowldege.png" alt="" class="img-responsive">
+                                </div>
                                 <p>Deep Regional Market Knowledge<br>Digital Expertise &amp; Vision<br>Strategic Partnership</p>
                             </div>
                         </div>
                         <div class="va-slice">
                             <h3 class="va-title">Digital Expertise &amp; Vision</h3>
                             <div class="va-content">
+                                <div class="img-block">
+                                    <img src="img/digi-expertise-vision.png" alt="" class="img-responsive">
+                                </div>
                                 <p>Deep Regional Market Knowledge<br>Digital Expertise &amp; Vision<br>Strategic Partnership</p>
                             </div>
                         </div>
                         <div class="va-slice">
                             <h3 class="va-title">Digital Expertise &amp; Vision</h3>
                             <div class="va-content">
+                                <div class="img-block">
+                                    <img src="img/strat-partnership.png" alt="" class="img-responsive">
+                                </div>
                                 <p>Deep Regional Market Knowledge<br>Digital Expertise &amp; Vision<br>Strategic Partnership</p>
                             </div>
                         </div>
@@ -151,11 +143,56 @@
             <div class="center-content">
                 <div class="container">
                     <ul>
-                        <li>Automated Marketing Solutions</li>
-                        <li>Data Management Platform</li>
-                        <li>Online Strategy,Planning,&amp; Content Marketing</li>
-                        <li>Social Media Strategy &amp; Marketing Services</li>
-                        <li>Media Planning &amp; Paid Channels Strategy</li>
+                        <li data-count="1">
+                            <div class="flip">
+                                <div class="front">
+                                    Automated Marketing<br>Solutions
+                                </div>
+                                <div class="back">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </li>
+                        <li data-count="2">
+                            <div class="flip">
+                                <div class="front">
+                                    Data Management<br>Platform
+                                </div>
+                                <div class="back">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </li>
+                        <li data-count="3">
+                            <div class="flip">
+                                <div class="front">
+                                    Online Strategy,Planning,<br>&amp; Content Marketing
+                                </div>
+                                <div class="back">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </li>
+                        <li data-count="4">
+                            <div class="flip">
+                                <div class="front">
+                                    Social Media Strategy<br>&amp; Marketing Services
+                                </div>
+                                <div class="back">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </li>
+                        <li data-count="5">
+                            <div class="flip">
+                                <div class="front">
+                                    Media Planning <br>&amp; Paid Channels Strategy
+                                </div>
+                                <div class="back">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -183,7 +220,7 @@
                         </h2>
                     </div>
                 </header>
-                <div id="mynetwork"></div>
+                <!-- <div id="mynetwork"></div> -->
                 <!-- <div id="config"></div> -->
                 <!-- Modal -->
                 <!-- <canvas id="springydemo" width="1600" height="800" style="border: 1px solid black;"></canvas> -->
