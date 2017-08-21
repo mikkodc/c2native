@@ -11,7 +11,7 @@
       "value": "#65a5c8"
     },
     "shape": {
-      "type": ["circle"],
+      "type": ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11","circle"],
       "stroke": {
         "width": 0,
         "color": "#000000"
@@ -80,8 +80,8 @@
         "mode": "grab"
       },
       "onclick": {
-        "enable": false,
-        "mode": "push"
+        "enable": true,
+        "mode": "custom"
       },
       "resize": true
     },
