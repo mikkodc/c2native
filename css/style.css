@@ -22,6 +22,17 @@ a:hover {
   z-index: 1;
   color: #fff;
   text-align: center;
+  overflow: hidden;
+}
+
+.section {
+  position: relative;
+}
+
+.section.active > .sectionHeader {
+  opacity: 1;
+  transition: 0.5s ease all;
+  transition-delay: 1s;
 }
 
 /* ---- header ---- */
@@ -31,6 +42,12 @@ a:hover {
   position: relative;
   z-index: 12;
   height: 84px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease all;
+  z-index: 11;
 }
 .sectionHeader .sectionTitle {
   position: relative;
@@ -258,6 +275,16 @@ a:hover {
 
 .home #particles-js {
   z-index: 10;
+}
+/*#particles-js,
+#canvas-particles {
+  position: absolute;
+}*/
+#canvas-particles {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
 }
 .home .sectionHeader {
   display: none;

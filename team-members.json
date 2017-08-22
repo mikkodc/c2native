@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "teamName": "Cumai",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-01.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 2,
+    "teamName": "Team2",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-02.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 3,
+    "teamName": "Team3",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-03.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 4,
+    "teamName": "Team4",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-04.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 5,
+    "teamName": "Team5",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-05.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 6,
+    "teamName": "Team6",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-06.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 7,
+    "teamName": "Team7",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-07.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 8,
+    "teamName": "Team8",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-08.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 9,
+    "teamName": "Team9",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-09.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 10,
+    "teamName": "Team10",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-10.png",
+    "teamDesc": "lorem ipsum"
+  },{
+    "id": 11,
+    "teamName": "Team11",
+    "teamPosition": "CEO",
+    "teamImage": "../img/team/team-11.png",
+    "teamDesc": "lorem ipsum"
+  }
+]
