@@ -1,24 +1,5 @@
 $(document).ready(function() {
 
-<<<<<<< HEAD
-  //FullpageJS Script
-=======
-  //Load JSON
-  // var teamMember;
-  //
-  // var oReq = new XMLHttpRequest();
-  // oReq.onload = reqListener;
-  // oReq.open("get", "team-members.json", true);
-  // oReq.send();
-  //
-  // function reqListener(e) {
-  //   teamMember = JSON.parse(this.responseText);
-  //   console.log(teamMember);
-  // }
-  //
-  // reqListener();
-
->>>>>>> v2
   $('#fullpage').fullpage({
 		verticalCentered: false,
     anchors:['home', 'pillars', 'services', 'enablers', 'team'],
@@ -308,7 +289,6 @@ $(document).ready(function() {
   // //   console.log('clicked nodes:', JSON.stringify(properties));
   // // });
   //
->>>>>>> v2
   // network.on( 'selectNode', function(properties) {
   //   var ids = properties.nodes;
   //   var clickedNodes = nodes.get(ids);
@@ -334,9 +314,5 @@ $(document).ready(function() {
   //   $(document).on('hidden.bs.modal', '.modal', function () {
   //     $('body').attr("style",'overflow: visible; height: initial;');
   //   });
-<<<<<<< HEAD
-
-=======
->>>>>>> v2
 
 });
